@@ -36,11 +36,6 @@
     }
 }
 
-// mixin para color aleatorio de fondo
-@mixin random-background-color() {
-    background-color: hsl(random(360), 100%, 50%);
-}
-
 // Otros mixins
 // Mixins para los botones
 // Mixins para los poligonos
