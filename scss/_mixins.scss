@@ -1,0 +1,47 @@
+/*Posicionar con flex*/
+@mixin flexposition($direction:row, $justify:center, $align:center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/*Menú navegación*/
+@mixin navigation() {
+    &-list {
+        @include flexposition(row, space-around);
+        height: 100%;
+    }
+
+    &-item {
+        list-style-type: none;
+    }
+
+    &-link {
+        color: color(primary);
+        font-size: size(xs);
+        text-decoration: none;
+        transition: all 0.5s;
+        // &:hover {
+        //     color: lighten(coolor(quaternary), 10%);
+        // }
+    }
+}
+
+@mixin card() {
+    @include flexposition(row, center, center);
+    
+    &__img {
+        width: 30rem;
+    }
+}
+
+// mixin para color aleatorio de fondo
+@mixin random-background-color() {
+    background-color: hsl(random(360), 100%, 50%);
+}
+
+// Otros mixins
+// Mixins para los botones
+// Mixins para los poligonos
+// Mixins para los colores

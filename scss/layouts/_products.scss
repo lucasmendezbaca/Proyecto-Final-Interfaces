@@ -1,0 +1,41 @@
+.main {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 2rem;
+
+    p {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+}
+
+.main__title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.cards {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 2rem;
+
+    .card {
+        @include card();
+
+        padding: 2rem;
+    }
+}
+
+@for $i from 1 through 6 {
+    .card:nth-child(#{$i}) {
+        @include random-background-color();
+    }
+}
+
