@@ -5,5 +5,17 @@
   margin: 0;
   padding: 0; }
 
-.menu ul {
-  list-style: none; }
+a {
+  text-decoration: none !important;
+  color: #000 !important; }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 5vw; }
+  .menu__options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw; }
