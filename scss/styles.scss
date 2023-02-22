@@ -2,14 +2,10 @@
 @import './mixins';
 @import './base';
 
-// @import 'layouts/header';
 @import 'layouts/navigation';
+@import 'layouts/hero';
 @import 'layouts/categories';
-// @import 'layouts/products';
-// @import 'layouts/footer';
 
 @import 'components/navigation';
 @import 'components/categories';
-// @import 'components/heading';
-// @import 'components/products';
-// @import 'components/footing';
+@import 'components/hero';

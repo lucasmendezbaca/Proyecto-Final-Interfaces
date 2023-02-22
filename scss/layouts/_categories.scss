@@ -1,6 +1,10 @@
 .categories {
     &__container {
-        @include flexposition(row, space-between, center);
+        @include flexposition(row, center, center, wrap, 16px);
+
+        &__item__img-container {
+            @include flexposition(row, center, center, wrap);
+        }
     }
 }
 

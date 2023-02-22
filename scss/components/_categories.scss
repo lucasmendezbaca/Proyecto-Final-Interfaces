@@ -1,15 +1,30 @@
 .categories {
     &__title {
         text-align: center;
+        padding-bottom: 5vh;
     }
 
     &__container {
-        max-width: 700px;
+        max-width: 600px;
         margin: 0 auto;
 
         &__item {
-            background-color: gray;
-            border-radius: 50%;
+            text-align: center;
+
+            &__img-container {
+                width: 90px;
+                height: 90px;
+                padding: 15px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: gray;
+                margin: 0 auto;
+
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

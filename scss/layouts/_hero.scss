@@ -1,0 +1,11 @@
+.hero {
+    @include flexposition(row, center, center, wrap);
+
+    &__img-container {
+        flex-basis: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
