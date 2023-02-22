@@ -1,0 +1,33 @@
+.categories {
+    &__container {
+        @include flexposition(row, space-between, center);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: space-between;
+// margin: 0 auto;
+// max-width: 1200px;
+// padding: 0 15px;

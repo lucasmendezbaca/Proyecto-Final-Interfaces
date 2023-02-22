@@ -7,26 +7,26 @@
 }
 
 /*Menú navegación*/
-@mixin navigation() {
-    &-list {
-        @include flexposition(row, space-around);
-        height: 100%;
-    }
+// @mixin navigation() {
+//     &-list {
+//         @include flexposition(row, space-around);
+//         height: 100%;
+//     }
 
-    &-item {
-        list-style-type: none;
-    }
+//     &-item {
+//         list-style-type: none;
+//     }
 
-    &-link {
-        color: color(primary);
-        font-size: size(xs);
-        text-decoration: none;
-        transition: all 0.5s;
-        // &:hover {
-        //     color: lighten(coolor(quaternary), 10%);
-        // }
-    }
-}
+//     &-link {
+//         color: color(primary);
+//         font-size: size(xs);
+//         text-decoration: none;
+//         transition: all 0.5s;
+//         // &:hover {
+//         //     color: lighten(coolor(quaternary), 10%);
+//         // }
+//     }
+// }
 
 @mixin card() {
     @include flexposition(row, center, center);

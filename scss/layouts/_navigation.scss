@@ -1,13 +1,7 @@
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5vh 5vw;
+    @include flexposition(row, space-between, center);
 
     &__options {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 50vw;
+        @include flexposition(row, space-between, center);
     }
 }

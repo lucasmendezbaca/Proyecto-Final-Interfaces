@@ -1,0 +1,15 @@
+.categories {
+    &__title {
+        text-align: center;
+    }
+
+    &__container {
+        max-width: 700px;
+        margin: 0 auto;
+
+        &__item {
+            background-color: gray;
+            border-radius: 50%;
+        }
+    }
+}
