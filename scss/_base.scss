@@ -4,15 +4,15 @@
     // font-family: $font-family;
 }
 
-html {
-}
-
-main {
-    padding: 0 5vw;
-}
-
+footer,
 section {
-    padding: 5vh 0;
+    padding: 10vh 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+h2 {
+    padding-bottom: 5vh;
 }
 
 h3 {

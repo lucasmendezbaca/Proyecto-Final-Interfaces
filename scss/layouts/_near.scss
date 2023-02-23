@@ -1,11 +1,5 @@
 .near {
     &__grid {
-        // @include gridtemplate(auto-fit, 250px, 250px, 24px);
         @include flexposition(row, center, center, wrap, 16px);
-
-        &__card {
-            &__img-container {
-            }
-        }
     }
 }

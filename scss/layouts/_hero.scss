@@ -2,10 +2,15 @@
     @include flexposition(row, center, center, wrap);
 
     &__img-container {
-        flex-basis: 40%;
+        flex-basis: 50%;
 
         img {
             width: 100%;
+            max-height: 450px;
         }
+    }
+
+    &__call-to-action {
+        flex-basis: 50%;
     }
 }

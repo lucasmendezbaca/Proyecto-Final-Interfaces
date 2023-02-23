@@ -1,8 +1,7 @@
 .app {
-    @include flexposition(row, center, center, wrap);
+    @include flexposition(row, center, center, wrap, 2rem);
 
     &__info {
-        flex-basis: 50%;
         @include flexposition(column, center, center, wrap);
 
         &__stores {
@@ -12,5 +11,12 @@
 
     &__images {
         flex-basis: 50%;
+        // min-width: 800px;
+
+        &__img-container {
+            img {
+                max-width: 100%;
+            }
+        }
     }
 }
