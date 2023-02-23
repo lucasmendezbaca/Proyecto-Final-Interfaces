@@ -1,0 +1,16 @@
+.places {
+    &__grid {
+
+
+        &__card {
+            &__img-container {
+                // width: 250px;
+                height: 130px;
+                background-image: url(../img/ejemplo-card.avif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.plaes {
+    &__grid {
+        @include flexposition(row, center, center, wrap, 16px);
+    }
+}
