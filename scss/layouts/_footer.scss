@@ -1,0 +1,5 @@
+.footer {
+    &__columns {
+        @include flexposition(row, space-around, center, wrap);
+    }
+}

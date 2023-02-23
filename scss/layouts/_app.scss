@@ -1,0 +1,16 @@
+.app {
+    @include flexposition(row, center, center, wrap);
+
+    &__info {
+        flex-basis: 50%;
+        @include flexposition(column, center, center, wrap);
+
+        &__stores {
+            @include flexposition(row, center, center, wrap, 1rem);
+        }
+    }
+
+    &__images {
+        flex-basis: 50%;
+    }
+}

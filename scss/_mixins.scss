@@ -7,6 +7,12 @@
     gap: $gap;
 }
 
+@mixin gridtemplate($type: auto-fit, $min: 250px, $max: 1fr, $gap: 0) {
+    display: grid;
+    grid-template-columns: repeat($type, minmax($min,$max));
+    gap: $gap;
+}
+
 /*Menú navegación*/
 // @mixin navigation() {
 //     &-list {

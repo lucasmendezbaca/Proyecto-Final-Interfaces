@@ -1,0 +1,15 @@
+.footer {
+    margin: 10vh 0;
+
+    &__columns {
+        &__column {
+            &__title {
+                margin-bottom: 1rem;
+            }
+            p{
+                margin-bottom: 0.3rem;
+            }
+        }
+
+    }
+}

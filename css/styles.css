@@ -59,6 +59,47 @@ a {
     flex-wrap: wrap;
     gap: 0; }
 
+.near__grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px; }
+
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0; }
+  .app__info {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0; }
+    .app__info__stores {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem; }
+  .app__images {
+    flex-basis: 50%; }
+
+.footer__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0; }
+
 .menu {
   padding: 5vh 5vw; }
   .menu__options {
@@ -87,3 +128,21 @@ a {
 
 .hero__call-to-action {
   text-align: center; }
+
+.near__grid__card__img-container {
+  width: 250px;
+  height: 130px;
+  background-image: url(../img/ejemplo-card.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.app__info__text {
+  text-align: center; }
+
+.footer {
+  margin: 10vh 0; }
+  .footer__columns__column__title {
+    margin-bottom: 1rem; }
+  .footer__columns__column p {
+    margin-bottom: 0.3rem; }
