@@ -15,11 +15,15 @@
     <header>
         <nav class="menu">
             <a class="menu__logo" href="index.html">
-                <img src="img/logo.svg" alt="">
+                <!-- <img src="img/logo.svg" alt=""> -->
+                <picture>
+                    <source media="(min-width: 480px)" srcset="img/logo.svg">
+                    <img src="img/logo-movil.svg" alt="">
+                </picture>
             </a>
             <div class="menu__options">
                 <input class="menu__options__search" type="text" name="search" id="search" placeholder="Buscar">
-                <a href="">
+                <a class="menu__options__address" href="">
                     <i><img src="img/address-icon.png" alt=""></i>&nbsp;
                     Avenida de las fuerz...&nbsp;
                     <i><img src="img/arrow-icon.png" alt=""></i>

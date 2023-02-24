@@ -26,6 +26,14 @@
         &__options {
             margin-top: 50px;
 
+            &__title {
+
+                img {
+                    width: 40px;
+                    margin-right: 10px;
+                }
+            }
+
             &__container {
 
                 &__item {

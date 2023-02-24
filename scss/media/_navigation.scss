@@ -1,0 +1,32 @@
+// mediaqueri en el 1553px
+@media (max-width: 1053px) {
+    .menu {
+        &__logo {
+            margin-top: -44px;
+        }
+
+        &__options {
+
+            &__address {
+                order: 1;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 412px) {
+    .menu {
+        &__logo {
+            width: fit-content;
+        }
+
+        &__options {
+
+            &__button {
+                width: 80px;
+            }
+        }
+    }
+}
