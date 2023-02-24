@@ -7,7 +7,7 @@
 }
 
 .menu--detail {
-    @include flexposition(row, space-between, center);
+    @include flexposition(row, space-between, flex-start);
 
     &__options {
         @include flexposition(row, flex-end, center, wrap, 1rem);

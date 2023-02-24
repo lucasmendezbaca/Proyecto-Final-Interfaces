@@ -1,0 +1,17 @@
+.detail {
+    @include flexposition(row, space-between, flex-start, nowrap, 2vw);
+
+    &__info {
+        flex-basis: 75%;
+
+        &__place {
+            &__extra-info {
+                @include flexposition(row, flex-start, center, wrap, 2rem);
+            }
+        }
+    }
+
+    &__cart {
+        flex-basis: 25%;
+    }
+}

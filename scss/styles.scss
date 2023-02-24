@@ -2,6 +2,7 @@
 @import './mixins';
 @import './base';
 
+// layouts
 @import 'layouts/navigation';
 @import 'layouts/hero';
 @import 'layouts/categories';
@@ -10,8 +11,11 @@
 
 @import 'layouts/filters';
 @import 'layouts/places';
+
+@import 'layouts/detail';
 @import 'layouts/footer';
 
+// components
 @import 'components/navigation';
 @import 'components/categories';
 @import 'components/hero';
@@ -20,4 +24,6 @@
 
 @import 'components/filters';
 @import 'components/places';
+
+@import 'components/detail';
 @import 'components/footer';

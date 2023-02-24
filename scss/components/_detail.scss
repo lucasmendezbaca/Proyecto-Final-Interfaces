@@ -1,0 +1,71 @@
+.detail {
+    position: relative;
+    margin-top: -70px;
+    padding: 0 5vw;
+    z-index: 9999;
+
+    &__info {
+        padding: 0;
+
+        &__place {
+            padding: 5vh 3vw;
+            background-color: white;
+            box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            &__title {
+                font-size: $font-size-xxl;
+                margin-bottom: 20px;
+            }
+
+            &__extra-info {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__options {
+            margin-top: 50px;
+
+            &__container {
+
+                &__item {
+                    padding: 5vh 3vw;
+                    border: 1px solid #e2e2e2;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+
+                    &__add-cart {
+                        @include flexposition(row, space-between, center);
+
+                        &__img {
+                            width: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__cart {
+        padding: 0;
+
+        &__container {
+            padding: 5vh 3vw;
+            min-height: 400px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            &__title {
+                font-size: $font-size-xl;
+                margin-bottom: 30px;
+                font-weight: bold;
+            }
+
+            p {
+                margin-top: 30px;
+            };
+        }
+    }
+}

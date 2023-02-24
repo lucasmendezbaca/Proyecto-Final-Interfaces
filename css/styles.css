@@ -5,6 +5,7 @@
   padding: 0; }
 
 footer,
+aside,
 section {
   padding: 10vh 0;
   padding-left: 5vw;
@@ -39,7 +40,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 0; }
   .menu--detail__options {
@@ -132,6 +133,25 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem; }
 
+.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 2vw; }
+  .detail__info {
+    flex-basis: 75%; }
+    .detail__info__place__extra-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem; }
+  .detail__cart {
+    flex-basis: 25%; }
+
 .footer__columns {
   display: flex;
   flex-direction: row;
@@ -181,7 +201,8 @@ a {
       transition: all 0.5s; }
 
 .menu--detail {
-  min-height: 200px; }
+  min-height: 200px;
+  position: relative; }
 
 .categories__title {
   text-align: center; }
@@ -283,6 +304,55 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+.detail {
+  position: relative;
+  margin-top: -70px;
+  padding: 0 5vw;
+  z-index: 9999; }
+  .detail__info {
+    padding: 0; }
+    .detail__info__place {
+      padding: 5vh 3vw;
+      background-color: white;
+      box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 10px; }
+      .detail__info__place__title {
+        font-size: 48px !important;
+        margin-bottom: 20px; }
+      .detail__info__place__extra-info {
+        margin-bottom: 20px; }
+    .detail__info__options {
+      margin-top: 50px; }
+      .detail__info__options__container__item {
+        padding: 5vh 3vw;
+        border: 1px solid #e2e2e2;
+        border-radius: 10px;
+        margin-bottom: 20px; }
+        .detail__info__options__container__item__add-cart {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 0; }
+          .detail__info__options__container__item__add-cart__img {
+            width: 34px; }
+  .detail__cart {
+    padding: 0; }
+    .detail__cart__container {
+      padding: 5vh 3vw;
+      min-height: 400px;
+      background-color: white;
+      text-align: center;
+      box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 10px; }
+      .detail__cart__container__title {
+        font-size: 28px !important;
+        margin-bottom: 30px;
+        font-weight: bold; }
+      .detail__cart__container p {
+        margin-top: 30px; }
 
 .footer {
   color: white;
