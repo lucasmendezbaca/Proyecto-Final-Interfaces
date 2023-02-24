@@ -1,5 +1,11 @@
-.plaes {
+.category-main {
+    @include flexposition(row, center, start);
+}
+
+.places {
+    flex-grow: 1;
+
     &__grid {
-        @include flexposition(row, center, center, wrap, 16px);
+        @include gridtemplate(auto-fit, 250px, 1fr, 1rem);
     }
 }

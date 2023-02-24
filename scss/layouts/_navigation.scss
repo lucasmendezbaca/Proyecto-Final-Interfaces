@@ -5,3 +5,11 @@
         @include flexposition(row, space-between, center);
     }
 }
+
+.menu--detail {
+    @include flexposition(row, space-between, center);
+
+    &__options {
+        @include flexposition(row, flex-end, center, wrap, 1rem);
+    }
+}

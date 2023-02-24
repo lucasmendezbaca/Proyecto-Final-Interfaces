@@ -1,0 +1,43 @@
+.filters {
+    padding-top: 10vh;
+    padding-left: 5vw;
+    max-height: calc(100vh - 100px);
+    position: sticky;
+    top: 100px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__type {
+        margin-bottom: 2rem;
+
+        &__title {
+            font-size: $font-size-normal;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+
+            &__item {
+                padding: 10px 0;
+                border-bottom: 1px solid #e2e2e2;
+
+                img {
+                    border-radius: 50%;
+                    padding: 4px;
+                }
+
+                &__img {
+                    background-color: #f3f3f3;
+                }
+
+                &__img--secondary {
+                    background-color: #fffbd0;
+                }
+            }
+        }
+    }
+}

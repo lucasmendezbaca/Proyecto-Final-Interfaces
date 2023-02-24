@@ -1,12 +1,15 @@
+.category-main {
+    padding-top: 100px;
+}
+
 .places {
     &__grid {
 
 
         &__card {
             &__img-container {
-                // width: 250px;
                 height: 130px;
-                background-image: url(../img/ejemplo-card.avif);
+                background-image: url(../img/ejemplo-place.avif);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;

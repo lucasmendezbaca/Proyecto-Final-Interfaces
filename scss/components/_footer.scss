@@ -1,5 +1,4 @@
 .footer {
-    margin-top: 10vh;
     color: white;
     background-color: $tertiary-color;
 
@@ -13,5 +12,15 @@
             }
         }
 
+    }
+}
+
+.footer__wabe {
+    height: 66.6px;
+    margin-top: 10vh;
+    
+    img {
+        height: 100%;
+        width: 100%;
     }
 }
