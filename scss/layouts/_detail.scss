@@ -1,3 +1,4 @@
+///Layout sección de la página de detalle
 .detail {
     @include flexposition(row, space-between, flex-start, nowrap, 2vw);
 

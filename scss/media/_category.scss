@@ -1,3 +1,4 @@
+///Responsive de las categorías
 @media (max-width: 1060px) {
     .category-main {
         @include flexposition(column, center, center);

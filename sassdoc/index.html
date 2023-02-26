@@ -1,0 +1,427 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Ejemplo-sass - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Ejemplo-sass - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Ejemplo-sass - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="colores"><a href="#colores">colores</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-variable"><a href="#colores-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color" data-type="variable"><a href="#colores-variable-color">color</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="tamañosletra"><a href="#tamañosletra">tamañosletra</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="tamañosletra-variable"><a href="#tamañosletra-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="tamañosletra" data-name="font-sizes" data-type="variable"><a href="#tamañosletra-variable-font-sizes">font-sizes</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="*" data-type="css"><a href="#undefined-css-*">*</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="footer,
+aside,
+section" data-type="css"><a href="#undefined-css-footer,
+aside,
+section">footer, aside, section</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".app" data-type="css"><a href="#undefined-css-.app">.app</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".categories" data-type="css"><a href="#undefined-css-.categories">.categories</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detail" data-type="css"><a href="#undefined-css-.detail">.detail</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".filters" data-type="css"><a href="#undefined-css-.filters">.filters</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".footer" data-type="css"><a href="#undefined-css-.footer">.footer</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".hero" data-type="css"><a href="#undefined-css-.hero">.hero</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".menu--detail,
+.menu" data-type="css"><a href="#undefined-css-.menu--detail,
+.menu">.menu--detail, .menu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".near" data-type="css"><a href="#undefined-css-.near">.near</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".category-main" data-type="css"><a href="#undefined-css-.category-main">.category-main</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".modal" data-type="css"><a href="#undefined-css-.modal">.modal</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".app" data-type="css"><a href="#undefined-css-.app">.app</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".categories" data-type="css"><a href="#undefined-css-.categories">.categories</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".detail" data-type="css"><a href="#undefined-css-.detail">.detail</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".filters" data-type="css"><a href="#undefined-css-.filters">.filters</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".footer" data-type="css"><a href="#undefined-css-.footer">.footer</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".hero" data-type="css"><a href="#undefined-css-.hero">.hero</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".menu" data-type="css"><a href="#undefined-css-.menu">.menu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".near" data-type="css"><a href="#undefined-css-.near">.near</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".category-main" data-type="css"><a href="#undefined-css-.category-main">.category-main</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".modal-dialog" data-type="css"><a href="#undefined-css-.modal-dialog">.modal-dialog</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="flexposition" data-type="mixin"><a href="#undefined-mixin-flexposition">flexposition</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="gridtemplate" data-type="mixin"><a href="#undefined-mixin-gridtemplate">gridtemplate</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="colores"><div class="container">colores</div></h1><section class="main__sub-section" id="colores-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colores-variable-color"><h3 class="item__heading"><a class="item__name" href="#variable-color">color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color: (
+    primary: #FFC244,
+    secondary: #23A57A,
+    tertiary: #1D1D1D,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Paleta de colores</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>: Lucas Méndez Baca</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="tamañosletra"><div class="container">tamañosletra</div></h1><section class="main__sub-section" id="tamañosletra-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="tamañosletra-variable-font-sizes"><h3 class="item__heading"><a class="item__name" href="#variable-font-sizes">font-sizes</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-sizes: (
+    xxxl: 58px,
+    xxl: 48px,
+    xl: 28px,
+    l: 20px,
+    normal: 1rem,
+    s: 14px,
+);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaños de letra</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>: Lucas Méndez Baca</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-*"><h3 class="item__heading"><a class="item__name" href="#css-*">*</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>* {
+  margin: 0;
+    padding: 0;
+}</code>" data-collapsed="* { ... }"><code>* { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Inicializa a 0 los margenes y paddings</p></div></section><section class="main__item container item" id="undefined-css-footer,
+aside,
+section"><h3 class="item__heading"><a class="item__name" href="#css-footer,
+aside,
+section">footer, aside, section</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>footer,
+aside,
+section {
+  padding: 10vh 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}</code>" data-collapsed="footer,
+aside,
+section { ... }"><code>footer,
+aside,
+section { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos por defecto de las etiquetas html</p></div></section><section class="main__item container item" id="undefined-css-.app"><h3 class="item__heading"><a class="item__name" href="#css-.app">.app</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.app {
+  &amp;__info {
+        &amp;__title {
+            font-size: $font-size-l;
+            font-weight: bold;
+        }
+
+        &amp;__text {
+            text-align: center;
+        }
+
+    }
+
+    &amp;__images {
+
+        &amp;__img-container {
+            text-align: center;
+        }
+    }
+}</code>" data-collapsed=".app { ... }"><code>.app { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente sección descargar app</p></div></section><section class="main__item container item" id="undefined-css-.categories"><h3 class="item__heading"><a class="item__name" href="#css-.categories">.categories</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.categories {
+  &amp;__title {
+        text-align: center;
+    }
+
+    &amp;__container {
+        max-width: 600px;
+        margin: 0 auto;
+
+        &amp;__item {
+            text-align: center;
+
+            &amp;__img-container {
+                width: 90px;
+                height: 90px;
+                padding: 15px;
+                border-radius: 50%;
+                overflow: hidden;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                margin: 0 auto;
+                margin-bottom: 10px;
+
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}</code>" data-collapsed=".categories { ... }"><code>.categories { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente sección categorías</p></div></section><section class="main__item container item" id="undefined-css-.detail"><h3 class="item__heading"><a class="item__name" href="#css-.detail">.detail</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detail {
+  position: relative;
+    margin-top: -70px;
+    padding: 0 5vw;
+    z-index: 9999;
+
+    &amp;__info {
+        padding: 0;
+
+        &amp;__place {
+            padding: 5vh 3vw;
+            background-color: white;
+            box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            &amp;__title {
+                font-size: $font-size-xxl;
+                margin-bottom: 20px;
+            }
+
+            &amp;__extra-info {
+                margin-bottom: 20px;
+            }
+        }
+
+        &amp;__options {
+            margin-top: 50px;
+
+            &amp;__title {
+
+                img {
+                    width: 40px;
+                    margin-right: 10px;
+                }
+            }
+
+            &amp;__container {
+
+                &amp;__item {
+                    padding: 5vh 3vw;
+                    border: 1px solid #e2e2e2;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+
+                    &amp;__add-cart {
+                        @include flexposition(row, space-between, center);
+
+                        &amp;__img {
+                            width: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &amp;__cart {
+        padding: 0;
+
+        &amp;__container {
+            padding: 5vh 3vw;
+            min-height: 400px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            &amp;__title {
+                font-size: $font-size-xl;
+                margin-bottom: 30px;
+                font-weight: bold;
+            }
+
+            p {
+                margin-top: 30px;
+            };
+        }
+    }
+}</code>" data-collapsed=".detail { ... }"><code>.detail { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente sección de la página de detalle</p></div></section><section class="main__item container item" id="undefined-css-.filters"><h3 class="item__heading"><a class="item__name" href="#css-.filters">.filters</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.filters {
+  padding-top: 10vh;
+    padding-left: 5vw;
+    max-height: calc(100vh - 100px);
+    position: sticky;
+    top: 100px;
+    overflow-y: auto;
+
+    &amp;::-webkit-scrollbar {
+        display: none;
+    }
+
+    &amp;__type {
+        margin-bottom: 2rem;
+
+        &amp;__title {
+            font-size: $font-size-normal;
+        }
+
+        &amp;__list {
+            list-style: none;
+            padding: 0;
+
+            &amp;__item {
+                padding: 10px 0;
+                border-bottom: 1px solid #e2e2e2;
+
+                img {
+                    border-radius: 50%;
+                    padding: 4px;
+                }
+
+                &amp;__img {
+                    background-color: #f3f3f3;
+                }
+
+                &amp;__img--secondary {
+                    background-color: #fffbd0;
+                }
+            }
+        }
+    }
+}</code>" data-collapsed=".filters { ... }"><code>.filters { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente sección de los filtros de la página de categoría</p></div></section><section class="main__item container item" id="undefined-css-.footer"><h3 class="item__heading"><a class="item__name" href="#css-.footer">.footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.footer {
+  color: white;
+    background-color: $tertiary-color;
+
+    &amp;__columns {
+        &amp;__column {
+            &amp;__title {
+                margin-bottom: 1rem;
+            }
+            p{
+                margin-bottom: 0.3rem;
+            }
+        }
+
+    }
+}</code>" data-collapsed=".footer { ... }"><code>.footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente del footer</p></div></section><section class="main__item container item" id="undefined-css-.hero"><h3 class="item__heading"><a class="item__name" href="#css-.hero">.hero</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.hero {
+  padding: 74px 5vw;
+    margin-top: 12vh;
+    background-color: $primary-color;
+
+    &amp;__call-to-action {
+        text-align: center;
+
+        &amp;__title {
+            font-size: $font-size-xxxl;
+            font-weight: bold;
+        }
+
+        &amp;__text {
+            font-size: $font-size-l;
+            padding: 2vh 0;
+        }
+
+        &amp;__input {
+            width: 100%;
+            height: 44px;
+            padding: 5px 20px;
+            border-radius: 8px;
+            border: none;
+            font-size: $font-size-l;
+
+            &amp;::placeholder {
+                text-align: center;
+            }
+
+            &amp;:focus {
+                outline: none;
+            }
+        }
+    }
+}</code>" data-collapsed=".hero { ... }"><code>.hero { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente del hero de la home</p></div></section><section class="main__item container item" id="undefined-css-.menu--detail,
+.menu"><h3 class="item__heading"><a class="item__name" href="#css-.menu--detail,
+.menu">.menu--detail, .menu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.menu--detail,
+.menu {
+  padding: 5vh 5vw;
+    min-height: 100px;
+    background-color: $primary-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    &amp;__logo {
+        width: 119px;
+    }
+
+    &amp;__options {
+        width: 58vw;
+
+        &amp;__search {
+            width: 50%;
+            height: 40px;
+            border-radius: 18px;
+            border: none;
+            padding: 5px 20px;
+
+            &amp;:focus {
+                outline: none;
+            }
+
+            &amp;::placeholder {
+                text-align: center;
+            }
+        }
+
+        &amp;__button {
+            width: 108px;
+            color: white;
+            height: 40px;
+            border-radius: 18px;
+            border: none;
+            background-color: $secondary-color;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+    }
+}</code>" data-collapsed=".menu--detail,
+.menu { ... }"><code>.menu--detail,
+.menu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente de los menus</p></div></section><section class="main__item container item" id="undefined-css-.near"><h3 class="item__heading"><a class="item__name" href="#css-.near">.near</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.near {
+  &amp;__grid {
+
+        .places__grid__card__img-container {
+            width: 250px;
+        }
+
+        &amp;__card {
+            &amp;__img-container {
+                width: 250px;
+                height: 130px;
+                background-image: url(../img/ejemplo-card.avif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}</code>" data-collapsed=".near { ... }"><code>.near { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente de la sección de los lugares cercanos</p></div></section><section class="main__item container item" id="undefined-css-.category-main"><h3 class="item__heading"><a class="item__name" href="#css-.category-main">.category-main</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.category-main {
+  padding-top: 100px;
+}</code>" data-collapsed=".category-main { ... }"><code>.category-main { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente de la sección de los lugares</p></div></section><section class="main__item container item" id="undefined-css-.modal"><h3 class="item__heading"><a class="item__name" href="#css-.modal">.modal</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.modal {
+  z-index: 9999999 !important;
+}</code>" data-collapsed=".modal { ... }"><code>.modal { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Componente del modal de registro</p></div></section><section class="main__item container item" id="undefined-css-.app"><h3 class="item__heading"><a class="item__name" href="#css-.app">.app</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.app {
+  @include flexposition(row, center, center, wrap, 2rem);
+
+    &amp;__info {
+        @include flexposition(column, center, center, wrap, 1rem);
+
+        &amp;__stores {
+            @include flexposition(row, center, center, wrap, 1rem);
+        }
+    }
+
+    &amp;__images {
+        flex-basis: 50%;
+        // min-width: 800px;
+
+        &amp;__img-container {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}</code>" data-collapsed=".app { ... }"><code>.app { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout sección descargar app</p></div></section><section class="main__item container item" id="undefined-css-.categories"><h3 class="item__heading"><a class="item__name" href="#css-.categories">.categories</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.categories {
+  &amp;__container {
+        @include flexposition(row, center, center, wrap, 30px);
+
+        &amp;__item__img-container {
+            @include flexposition(row, center, center, wrap);
+        }
+    }
+}</code>" data-collapsed=".categories { ... }"><code>.categories { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout sección categorías</p></div></section><section class="main__item container item" id="undefined-css-.detail"><h3 class="item__heading"><a class="item__name" href="#css-.detail">.detail</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.detail {
+  @include flexposition(row, space-between, flex-start, nowrap, 2vw);
+
+    &amp;__info {
+        flex-basis: 75%;
+
+        &amp;__place {
+            &amp;__extra-info {
+                @include flexposition(row, flex-start, center, wrap, 2rem);
+            }
+        }
+    }
+
+    &amp;__cart {
+        flex-basis: 25%;
+    }
+}</code>" data-collapsed=".detail { ... }"><code>.detail { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout sección de la página de detalle</p></div></section><section class="main__item container item" id="undefined-css-.filters"><h3 class="item__heading"><a class="item__name" href="#css-.filters">.filters</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.filters {
+  flex-basis: 20%;
+}</code>" data-collapsed=".filters { ... }"><code>.filters { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout sección de los filtros de la página de categoría</p></div></section><section class="main__item container item" id="undefined-css-.footer"><h3 class="item__heading"><a class="item__name" href="#css-.footer">.footer</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.footer {
+  &amp;__columns {
+        @include flexposition(row, space-around, center, wrap, 4rem);
+    }
+}</code>" data-collapsed=".footer { ... }"><code>.footer { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout del footer</p></div></section><section class="main__item container item" id="undefined-css-.hero"><h3 class="item__heading"><a class="item__name" href="#css-.hero">.hero</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.hero {
+  @include flexposition(row, center, center, wrap);
+
+    &amp;__img-container {
+        flex-basis: 50%;
+
+        img {
+            width: 100%;
+            max-height: 450px;
+        }
+    }
+
+    &amp;__call-to-action {
+        flex-basis: 50%;
+    }
+}</code>" data-collapsed=".hero { ... }"><code>.hero { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout del hero de la home</p></div></section><section class="main__item container item" id="undefined-css-.menu"><h3 class="item__heading"><a class="item__name" href="#css-.menu">.menu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.menu {
+  @include flexposition(row, space-between, center);
+
+    &amp;__options {
+        @include flexposition(row, space-between, center);
+    }
+}</code>" data-collapsed=".menu { ... }"><code>.menu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout de los menus</p></div></section><section class="main__item container item" id="undefined-css-.near"><h3 class="item__heading"><a class="item__name" href="#css-.near">.near</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.near {
+  &amp;__grid {
+        @include flexposition(row, center, center, wrap, 1.4rem);
+    }
+}</code>" data-collapsed=".near { ... }"><code>.near { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout de la sección de los lugares cercanos</p></div></section><section class="main__item container item" id="undefined-css-.category-main"><h3 class="item__heading"><a class="item__name" href="#css-.category-main">.category-main</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.category-main {
+  @include flexposition(row, center, start);
+}</code>" data-collapsed=".category-main { ... }"><code>.category-main { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Layout de la sección de los lugares</p></div></section><section class="main__item container item" id="undefined-css-.modal-dialog"><h3 class="item__heading"><a class="item__name" href="#css-.modal-dialog">.modal-dialog</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.modal-dialog {
+  @media (min-width: 575px) {
+    max-width: 600px !important;
+  }
+}</code>" data-collapsed=".modal-dialog { ... }"><code>.modal-dialog { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Responsive del modal de registro</p></div></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-flexposition"><h3 class="item__heading"><a class="item__name" href="#mixin-flexposition">flexposition</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flexposition($direction, $justify, $align, $wrap, $gap) { 
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+ }" data-collapsed="@mixin flexposition($direction, $justify, $align, $wrap, $gap) { ... }"><code>@mixin flexposition($direction, $justify, $align, $wrap, $gap) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>mixin para posicionar elementos con flexbox</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>direccion del contenedor flex</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justify</code></th><td data-label="desc"><p>alineacion horizontal de los elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$align</code></th><td data-label="desc"><p>alineacion vertical de los elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$wrap</code></th><td data-label="desc"><p>si los elementos se ajustan al contenedor</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$gap</code></th><td data-label="desc"><p>espacio entre los elementos</p></td><td data-label="type"><code>Integer</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>.menu {
+    @include flexposition(row, space-between, center);
+
+    &amp;__options {
+        @include flexposition(row, space-between, center);
+    }
+}</code></pre></div></section><section class="main__item container item" id="undefined-mixin-gridtemplate"><h3 class="item__heading"><a class="item__name" href="#mixin-gridtemplate">gridtemplate</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin gridtemplate($type, $min, $max, $row-gap, $column-gap) { 
+    display: grid;
+    grid-template-columns: repeat($type, minmax($min,$max));
+    grid-row-gap: $row-gap;
+    grid-column-gap: $column-gap;
+ }" data-collapsed="@mixin gridtemplate($type, $min, $max, $row-gap, $column-gap) { ... }"><code>@mixin gridtemplate($type, $min, $max, $row-gap, $column-gap) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>mixin para posicionar elementos con grid</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$type</code></th><td data-label="desc"><p>tipo de grid</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$min</code></th><td data-label="desc"><p>tamaño minimo de los elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$max</code></th><td data-label="desc"><p>tamaño maximo de los elementos</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$row-gap</code></th><td data-label="desc"><p>espacio entre las filas</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$column-gap</code></th><td data-label="desc"><p>espacio entre las columnas</p></td><td data-label="type"><code>Integer</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><pre class="example__code language-scss"><code>&amp;__grid {
+    @include gridtemplate(auto-fit, 250px, 1fr, 1.5rem, 1rem);
+}</code></pre></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Ejemplo-sass</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

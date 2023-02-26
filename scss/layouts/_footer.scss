@@ -1,3 +1,4 @@
+///Layout del footer
 .footer {
     &__columns {
         @include flexposition(row, space-around, center, wrap, 4rem);

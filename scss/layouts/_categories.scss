@@ -1,3 +1,4 @@
+///Layout sección categorías
 .categories {
     &__container {
         @include flexposition(row, center, center, wrap, 30px);

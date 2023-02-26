@@ -71,7 +71,7 @@ const sassdoc= require('sassdoc');
 const { parallel, src, dest, watch} = require('gulp');
 
 var doc_options = {
-    dest: "docs",
+    dest: "doc",
 };
 
 function generate_docs(){
