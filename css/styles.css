@@ -87,7 +87,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px; }
+  gap: 1.4rem; }
 
 .app {
   display: flex;
@@ -102,7 +102,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0; }
+    gap: 1rem; }
     .app__info__stores {
       display: flex;
       flex-direction: row;
@@ -219,6 +219,53 @@ a {
   min-height: 200px;
   position: relative; }
 
+.modal {
+  z-index: 9999999 !important; }
+
+.modal-header {
+  border-bottom: none !important;
+  margin-top: 44px; }
+  .modal-header .modal-title {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 28px !important;
+    font-weight: 700; }
+
+.modal-content {
+  padding: 0 6vw !important; }
+  .modal-content form {
+    margin-top: 44px; }
+
+.form-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 40px;
+  margin-bottom: 44px; }
+  .form-section__img {
+    width: 32px; }
+  .form-section__input {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid #e2e2e2; }
+    .form-section__input:focus {
+      outline: none; }
+
+.login-register {
+  color: #23A57A; }
+
+.modal-footer {
+  border-top: none !important;
+  justify-content: center !important;
+  margin-bottom: 44px; }
+  .modal-footer button {
+    min-height: 44px;
+    width: 100%; }
+
 .categories__title {
   text-align: center; }
 
@@ -270,6 +317,9 @@ a {
     height: 100%;
     width: 100%; }
 
+.near__grid .places__grid__card__img-container {
+  width: 250px; }
+
 .near__grid__card__img-container {
   width: 250px;
   height: 130px;
@@ -277,6 +327,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+.app__info__title {
+  font-size: 20px !important;
+  font-weight: bold; }
 
 .app__info__text {
   text-align: center; }
@@ -448,6 +502,10 @@ a {
   .menu--detail__options__address {
     margin-bottom: 50px; } }
 
+@media (min-width: 575px) {
+  .modal-dialog {
+    max-width: 600px !important; } }
+
 @media (max-width: 840px) {
   .hero__img-container {
     flex-basis: 100%;
@@ -495,6 +553,10 @@ a {
     gap: 2vw; }
     .detail__info {
       width: 100%; } }
+
+@media (max-width: 944px) {
+  .app__images {
+    flex-basis: 100%; } }
 
 @media (max-width: 384px) {
   .footer__columns {

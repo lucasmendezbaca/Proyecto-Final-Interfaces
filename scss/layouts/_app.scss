@@ -2,7 +2,7 @@
     @include flexposition(row, center, center, wrap, 2rem);
 
     &__info {
-        @include flexposition(column, center, center, wrap);
+        @include flexposition(column, center, center, wrap, 1rem);
 
         &__stores {
             @include flexposition(row, center, center, wrap, 1rem);

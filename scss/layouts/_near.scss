@@ -1,5 +1,5 @@
 .near {
     &__grid {
-        @include flexposition(row, center, center, wrap, 16px);
+        @include flexposition(row, center, center, wrap, 1.4rem);
     }
 }

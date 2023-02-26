@@ -17,6 +17,7 @@
 
 // components
 @import 'components/navigation';
+@import 'components/registerModal';
 @import 'components/categories';
 @import 'components/hero';
 @import 'components/near';
@@ -30,7 +31,9 @@
 
 // media-querys
 @import 'media/navigation';
+@import 'media/registerModal';
 @import 'media/hero';
 @import 'media/category';
 @import 'media/detail';
+@import 'media/app';
 @import 'media/footer';

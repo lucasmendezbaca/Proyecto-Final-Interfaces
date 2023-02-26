@@ -10,6 +10,7 @@
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
                     Avenida de las fuerz...&nbsp;
                     <i><img src="img/arrow-icon.png" alt=""></i>
                 </a>
-                <button class="menu__options__button">Empezar</button>
+                <button type="button" class="menu__options__button" data-bs-toggle="modal" data-bs-target="#exampleModal">Empezar</button>
             </div>
         </nav>
 
@@ -46,6 +47,40 @@
             <img src="img/hero-wabe.svg" alt="">
         </div>
     </header>
+
+    <!-- Inicio Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Regístrate en Glovo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>¿Ya tienes una cuenta? <span class="login-register">Inicia sesión</span></p>
+            <!-- Fomulario de registro igual que la página de globo -->
+            <form>
+                <div class="form-section">
+                    <i><img class="form-section__img" src="img/person.svg" alt=""></i>
+                    <input class="form-section__input" type="text" name="name" id="name" placeholder="Nombre">
+                </div>
+                <div class="form-section">
+                    <i><img class="form-section__img" src="img/letter.svg" alt=""></i>
+                    <input class="form-section__input" type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-section">
+                    <i><img class="form-section__img" src="img/lock.svg" alt=""></i>
+                    <input class="form-section__input" type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="menu__options__button">Regístrate</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- Fin Modal -->
 
     <main>
         <section class="categories">
@@ -129,7 +164,213 @@
         <section class="near">
             <h2 class="near__title">Establecimientos cerca de ti</h2>
             <div class="near__grid">
-                <div class="near__grid__card">
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/ejemplo-place.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Voy Volando</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Pizza</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Pizza</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">97%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/poke.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Healthy Poke</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Poke</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">92%</span>
+                            <span class="places__grid__card__info__likes">(199)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/mc-donals.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">McDonal's</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Americana</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Hamburguesas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">88%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/burger-king.jfif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Burger King</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Americana</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Hamburguesas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">97%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/la-cueva.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Restaurante La Cueva de 1900</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Hamburguesas</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Mediterránea</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">81%</span>
+                            <span class="places__grid__card__info__likes">(87)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/isla-verde.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Isla Verde</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Árabe</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Kebab</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">97%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/pizza-kebab.jfif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Pizza Kebab Los Compis</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Árabe</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">97%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/mayerlin.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Mayerling</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Bocadillos</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Snacks</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">97%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/churreria.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Churrería Gongora</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Bocadillos</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Snacks</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">97%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/ejemplo-place.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Voy Volando</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Pizza</span>
+                                    <span class="places__grid__card__img-container__info__categories__item">Pizza</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">97%</span>
+                            <span class="places__grid__card__info__likes">(500+)</span>
+                        </p>
+                    </article>
+                </a>
+                <a href="detail.html">
+                    <article class="places__grid__card">
+                        <div class="places__grid__card__img-container">
+                            <img src="img/poke.avif" alt="">
+                            <div class="places__grid__card__img-container__info">
+                                <h4 class="places__grid__card__img-container__info__title">Healthy Poke</h4>
+                                <div class="places__grid__card__img-container__info__categories">
+                                    <span class="places__grid__card__img-container__info__categories__item">Poke</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="places__grid__card__info">
+                            <i><img src="img/like.svg" alt=""></i>
+                            <span class="places__grid__card__info__percent">92%</span>
+                            <span class="places__grid__card__info__likes">(199)</span>
+                        </p>
+                    </article>
+                </a>
+                <!-- <div class="near__grid__card">
                     <div class="near__grid__card__img-container">
                     </div>
                     <h3 class="near__grid__card__title">Carrefour</h3>
@@ -218,7 +459,7 @@
                         <span class="near__grid__card__info__percent">97%</span>
                         <span class="near__grid__card__info__likes">(500+)</span>
                     </p>
-                </div>
+                </div> -->
             </div>
 
         </section>
