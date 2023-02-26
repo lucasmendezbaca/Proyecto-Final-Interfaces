@@ -1,0 +1,20 @@
+@media (max-width: 840px) {
+    .hero {
+        &__img-container {
+            flex-basis: 100%;
+            text-align: center;
+            order: 2;
+
+            img {
+                width: 70%;
+                max-height: 450px;
+            }
+        }
+
+        &__call-to-action {
+            flex-basis: 100%;
+            order: 1;
+            margin-bottom: 30px;
+        }
+    }
+}

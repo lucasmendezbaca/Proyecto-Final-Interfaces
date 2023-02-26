@@ -1,6 +1,6 @@
 .categories {
     &__container {
-        @include flexposition(row, center, center, wrap, 16px);
+        @include flexposition(row, center, center, wrap, 30px);
 
         &__item__img-container {
             @include flexposition(row, center, center, wrap);
