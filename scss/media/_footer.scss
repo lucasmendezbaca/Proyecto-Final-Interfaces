@@ -1,0 +1,7 @@
+@media (max-width: 384px) {
+    .footer {
+        &__columns {
+            @include flexposition(row, flex-start, center, wrap, 4rem);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@media (max-width: 1060px) {
+    .category-main {
+        @include flexposition(column, center, center);
+    }
+
+    .filters {
+        @include flexposition(row, space-around, start);
+        position: relative;
+        width: 100%;
+        padding-right: 5vw;
+        padding-top: 0;
+        max-height: 190px;
+    }
+
+    .places {
+        margin-top: 100px;
+        width: 100%;
+    }
+}

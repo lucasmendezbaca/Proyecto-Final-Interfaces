@@ -30,3 +30,32 @@
         }
     }
 }
+
+
+@media (max-width: 554px) {
+    .menu--detail {
+
+        &__options {
+
+            &__address {
+                order: 1;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .menu--detail {
+        &__logo {
+            width: fit-content;
+        }
+
+        &__options {
+
+            &__address {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

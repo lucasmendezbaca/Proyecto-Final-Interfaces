@@ -7,10 +7,11 @@
     gap: $gap;
 }
 
-@mixin gridtemplate($type: auto-fit, $min: 250px, $max: 1fr, $gap: 0) {
+@mixin gridtemplate($type: auto-fit, $min: 250px, $max: 1fr, $row-gap: 1rem, $column-gap: 1rem) {
     display: grid;
     grid-template-columns: repeat($type, minmax($min,$max));
-    gap: $gap;
+    grid-row-gap: $row-gap;
+    grid-column-gap: $column-gap;
 }
 
 /*Menú navegación*/

@@ -15,10 +15,13 @@
     <header>
         <nav class="menu--detail">
             <a class="menu--detail__logo" href="index.html">
-                <img src="img/logo.svg" alt="">
+                <picture>
+                    <source media="(min-width: 480px)" srcset="img/logo.svg">
+                    <img src="img/logo-movil.svg" alt="">
+                </picture>
             </a>
             <div class="menu--detail__options">
-                <a href="">
+                <a href="" class="menu--detail__options__address">
                     <i><img src="img/address-icon.png" alt=""></i>&nbsp;
                     Avenida de las fuerz...&nbsp;
                     <i><img src="img/arrow-icon.png" alt=""></i>

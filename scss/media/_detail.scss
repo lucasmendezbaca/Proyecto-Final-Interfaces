@@ -1,0 +1,9 @@
+@media (max-width: 680px) {
+    .detail {
+        @include flexposition(column, center, center, nowrap, 2vw);
+
+        &__info {
+            width: 100%;
+        }
+    }
+}
